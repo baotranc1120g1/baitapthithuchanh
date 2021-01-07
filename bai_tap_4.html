@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 4</title>
+    <canvas id="b" style="width: 420px;height: 240px;border: royalblue 1px solid"></canvas>
+</head>
+<body>
+<script>
+    let Circle = function(x,y,radius,color,) {
+        this.x = x;
+        this.y = y;
+        this.Color = color;
+        this.radius = radius;
+        this.render = function (){
+            let c = document.getElementById("b");
+            let ctx = c.getContext('2d');
+            ctx.beginPath();
+            ctx.arc(this.x,this.y,this.radius,0,2*Math.PI);
+            ctx.fillStyle = this.Color;
+            ctx.fill();
+            ctx.stroke();
+        }
+    };
+    let circle = new Circle(10,10,100,"#0000FF");
+    circle.render();
+
+</script>
+
+</body>
+</html>

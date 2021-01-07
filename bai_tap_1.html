@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 1</title>
+</head>
+<body>
+<script>
+ function finmax(arr) {
+     let leng = arr.length;
+     let max = null;
+
+     if (leng === 0)
+         return max;
+     max = arr[0];
+     for (var i = 1; i < leng; i++) {
+         if (arr[i] > max)
+             max = arr[i];
+     }
+     alert(max);
+ }
+ finmax(arr);
+</script>
+
+</body>
+</html>

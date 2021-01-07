@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 2</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr, x) {
+        let a = false;
+        for (i = 0; i < arr.length; i++) {
+            if (x == arr[i]) {
+                arr.splice(i,1);
+                a = true;
+                i--;
+            }
+        } if (a == false) {
+            alert("khong co phan tu trong mang")
+        } else  {
+            alert("mang con lai:" + arr);
+        }
+    }
+    tryRemoveFromArray(arr, x);
+</script>
+
+</body>
+</html>

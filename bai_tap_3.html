@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 3</title>
+</head>
+<body>
+<script>
+    function  isFibonacci(num) {
+        var first = 0;
+        var second = 1;
+        var third = first + second;
+
+        if (num === first)
+        {
+            return true;
+            alert('Fibonacci Number!')
+        }
+
+        while (third <= num)
+        {
+            if (third === num)
+            {
+                alert('Fibonacci Number!')
+                return true;
+            }
+
+            first = second;
+            second = third;
+            third = first + second;
+        }
+
+        alert('Not Fibonacci Number!')
+
+        return false;
+    }
+    isFibonacci(num);
+</script>
+
+</body>
+</html>
