@@ -7,17 +7,12 @@
 <body>
 <script>
  function finmax(arr) {
-     let leng = arr.length;
-     let max = null;
-
-     if (leng === 0)
-         return max;
-     max = arr[0];
-     for (var i = 1; i < leng; i++) {
+      var max = arr[0];
+     for (var i = 1; i < arr.length; i++) {
          if (arr[i] > max)
              max = arr[i];
      }
-     alert(max);
+     return max;
  }
  finmax(arr);
 </script>
